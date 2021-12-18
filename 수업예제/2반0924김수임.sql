@@ -54,8 +54,3 @@ from employee;
 select round(sysdate - to_date('2021-01-01', 'yyyy-mm-dd')) as 지난날,
        round(to_date('2021-12-31', 'yyyy-mm-dd') - sysdate) as 남은날
 from dual;
-
---6. 사원들의 직속상관 사번을 출력, 직속상관이 없는 사원은 NULL 대신에 0으로 출력
-
---7. decode 함수로 직급에 따라 급여를 인상--> case문으로도 작성해보기
---'ANALYST': 200, 'SALESMAN': 180, 'MANAGER': 150, 'CLERK': 100
